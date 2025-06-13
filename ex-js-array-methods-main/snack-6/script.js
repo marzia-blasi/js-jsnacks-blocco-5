@@ -31,3 +31,35 @@ for (let i = 0; i < zucchine.length; i++) {
 
 console.log(zucchineLunghissime);
 console.log(zucchineCortissime);
+
+const zucchinalunghettina = [];
+const zucchinacortina = [];
+
+zucchine.forEach((zucchina, i, array) => {
+  if (zucchina.length >= 15) {
+    zucchinalunghettina.push(
+      `la zucchina ${zucchina.type} è lunga ${zucchina.length}`
+    );
+  } else {
+    zucchinacortina.push(
+      `la zucchina ${zucchina.type} è lunga ${zucchina.length}`
+    );
+  }
+});
+
+console.log(zucchinalunghettina);
+
+console.log(zucchinacortina);
+
+const zucchinalunghetta = zucchine.filter((zucchina, i, array) => {
+  if (zucchina.length >= 15) {
+    return true;
+  }
+  return false;
+});
+
+console.log(zucchinalunghetta);
+
+const Zucchinalunga = zucchine.filter((zucchina) => zucchina.length >= 15);
+
+console.log(Zucchinalunga);
