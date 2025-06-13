@@ -9,3 +9,7 @@ const newNumbers = numbers.map((number, i, array) => {
 });
 
 console.log(newNumbers);
+
+const compactNubers = numbers.map((numb) => numb + 1);
+
+console.log(compactNubers);
