@@ -9,15 +9,22 @@ for (let i = 0; i < nums.length; i++) {
   const num = nums[i];
   if (num % 2 === 0) {
     console.log(num);
+    pari.push(num);
   }
 }
+console.log(pari);
+
+const parucci = [];
 
 nums.forEach((num, i, array) => {
   if (num % 2 === 0) {
     console.log(num);
+    parucci.push(num);
   }
 });
 
-const parissimi = nums.forEach((numb) => numb % 2 === 0);
+console.log(parucci);
+
+const parissimi = nums.filter((numb) => numb % 2 === 0); // se tru si  els
 
 console.log(parissimi);
